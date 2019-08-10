@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập tạo và sử dụng hàm 02</title>
+</head>
+<body>
+<script>
+    let numberOne = parseInt(prompt("Enter the number :"));
+    let numberTwo = parseInt(prompt("Enter the number :"));
+    function swappedNumber(){
+        let c = numberOne;
+         numberOne = numberTwo;
+         numberTwo = c;
+    }
+    swappedNumber(numberOne,numberTwo);
+    alert(numberOne + "," + numberTwo);
+</script>
+</body>
+</html>

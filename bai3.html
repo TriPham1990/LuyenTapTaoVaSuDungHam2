@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập tạo và sử dụng hàm 02</title>
+</head>
+<body>
+<script>
+    function factorial(n) {
+        let factorialNumber = n;
+        if (n === 0 || n === 1) {
+            return 1;
+        }
+        for (let i = 1; i < n; i++) {
+            factorialNumber *= i;
+        }
+        return factorialNumber;
+    }
+
+    let number = parseInt(prompt());
+    let factorialOfNumber = factorial(number);
+
+    alert(factorialOfNumber);
+</script>
+</body>
+</html>

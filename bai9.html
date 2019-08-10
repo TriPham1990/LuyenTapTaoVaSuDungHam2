@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập tạo và sử dụng hàm 02</title>
+</head>
+<body>
+<script>
+    let arrayCharacters = ['a','d','f','h','s','c','a','r','h','v','c','w','t','y','u','g','d','c','v','b'];
+    let character = prompt();
+
+    function checkCharacters(arr,char){
+        let count = 0;
+        for(let i=0;i<arr.length;i++){
+            if(arr[i]=== char){
+                count++;
+            }
+        }
+        if(count === 0){
+            count = -1;
+        }
+        return count;
+    }
+
+    alert(checkCharacters(arrayCharacters,character));
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập tạo và sử dụng hàm 02</title>
+</head>
+<body>
+<script>
+    let input = prompt();
+
+    function checkInput(int) {
+        if (int >= 0 && int <= 9) {
+            return true;
+        } else if (int >= 'a' && int <= 'z') {
+            return false;
+        }
+    }
+
+    alert(checkInput(input));
+</script>
+</body>
+</html>
